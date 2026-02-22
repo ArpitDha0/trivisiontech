@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Testimonials - Trivision Tech</title>
+  <link rel="icon" href="assets/img2/logo_trivision_tech-removebg-preview.png" />
+
+  <!-- CSS only -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/color.css">
+
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/preloader.js"></script>
+
+  <style>
+    .testimonial-card {
+      background: white;
+      border-left: 4px solid #0066cc;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      transform: translateY(-2px);
+    }
+
+    .testimonial-card .stars {
+      color: #ffc107;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .testimonial-card p {
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .testimonial-meta {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+    }
+
+    .testimonial-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0066cc 0%, #00aaff 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .testimonial-info h5 {
+      margin: 0;
+      color: #333;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .testimonial-info span {
+      display: block;
+      color: #888;
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .testimonial-section {
+      background-color: #faf9f5;
+      padding: 60px 0;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .feature-box {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .feature-box i {
+      font-size: 40px;
+      color: #0066cc;
+      margin-bottom: 15px;
+    }
+
+    .feature-box h4 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- loader -->
+<div class="preloader">
+    <div class="loader4"></div>
+</div>
+<!-- loader end -->
+
+ <header class="topnav">
+      <div class="container">
+        <div class="header-bar">
+          <a href="index.html">
+            <!-- <img src="assets/img/logo.png" alt="logo" /> -->
+               <!-- Desktop logo -->
+  <img src="assets/img2/logo_trivision_tech-removebg-preview.png" 
+       alt="logo"
+       class="img-fluid d-none d-md-block"
+       style="height: 100px; width: auto;">
+  <!-- Mobile logo -->
+  <img src="assets/img2/logo_trivision_tech-removebg-preview.png" 
+       alt="logo"
+       class="img-fluid d-block d-md-none"
+       style="height: 80px; width: auto;">
+
+          </a>
+          <nav class="navbar">
+            <ul class="navbar-links">
+              <li class="navbar-dropdown has-children">
+                <a href="index.html">home</a>
+                
+              <li class="navbar-dropdown">
+                <a href="our-projects.html">Product List</a>
+              </li>
+              <li class="navbar-dropdown">
+                <a href="testimonials.html">Testimonials</a>
+              </li>
+              <!-- <li class="navbar-dropdown has-children">
+                  <li>
+                    <a href="services.html"
+                      ><i class="fa-solid fa-arrow-right"></i>Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="service-details.html"
+                      ><i class="fa-solid fa-arrow-right"></i>Services
+                      details</a
+                    >
+                  </li>
+                  <li>
+                    <a href="team-details.html"
+                      ><i class="fa-solid fa-arrow-right"></i>team details</a
+                    >
+                  </li>
+                  <li>
+                    <a href="pricing-plans.html"
+                      ><i class="fa-solid fa-arrow-right"></i>pricing plans</a
+                    >
+                  </li>
+                </ul>
+              </li> -->
+              <!--  
+              <li class="navbar-dropdown has-children">
+                <a href="#">Project</a>
+                <ul class="dropdown">
+                  <li>
+                    <a href="project-details-1.html"
+                      ><i class="fa-solid fa-arrow-right"></i>project details
+                      1</a
+                    >
+                  </li>
+                  <li>
+                    <a href="project-details-2.html"
+                      ><i class="fa-solid fa-arrow-right"></i>project details
+                      2</a
+                    >
+                  </li>
+                  <li>
+                    <a href="our-projects.html"
+                      ><i class="fa-solid fa-arrow-right"></i>our projects</a
+                    >
+                  </li>
+                  <li>
+                    <a href="our-projects-2.html"
+                      ><i class="fa-solid fa-arrow-right"></i>our projects 2</a
+                    >
+                  </li>
+                </ul>
+              </li>-->
+              <!-- <li class="navbar-dropdown">
+                <a href="faqs.html">Faq’s</a>
+              </li> -->
+              <!-- 
+              <li class="navbar-dropdown has-children">
+                <a href="#">News</a>
+                <ul class="dropdown">
+                  <li>
+                    <a href="our-blog.html"
+                      ><i class="fa-solid fa-arrow-right"></i>our blog</a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog-details.html"
+                      ><i class="fa-solid fa-arrow-right"></i>blog details</a
+                    >
+                  </li>
+                </ul>
+              </li> -->
+               <li><a href="about.html">about</a></li>
+              <li class="navbar-dropdown">
+                <a href="contact.html">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="pickup">
+            <div class="menu-icon cursor-pointer">
+              <span class="text"><span class="word">Menu</span></span>
+              <span class="icon">
+                <i></i>
+                <i></i>
+              </span>
+            </div>
+            <!-- <a href="javascript:void(0)" class="btn">Start Free Trial</a> -->
+          </div>
+
+          <div class="bar-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div
+          class="mobile-nav hmburger-menu"
+          id="mobile-nav"
+          style="
+            display: block;
+            background-image: url(assets/img/background.png);
+          "
+        >
+          <div class="res-log">
+            <a href="index.html">
+              <img src="assets/img2/logo_trivision_tech-removebg-preview.png" 
+       alt="logo"
+       class="img-fluid d-none d-md-block"
+       style="height: 100px; width: auto;">
+  <!-- Mobile logo -->
+  <img src="assets/img2/logo_trivision_tech-removebg-preview.png" 
+       alt="logo"
+       class="img-fluid d-block d-md-none"
+       style="height: 80px; width: auto;">
+            </a>
+          </div>
+          <ul>
+            <li class="menu-item-has-children">
+              <a href="index.html"
+                >home<i class="fa-solid fa-angle-right"></i
+              ></a>
+              <!-- <ul class="sub-menu">
+                <li><a href="index.html">home 1</a></li>
+                <li><a href="index-2.html">home 2</a></li>
+                <li><a href="index-3.html">home 3</a></li>
+              </ul> -->
+            </li>
+          
+            <!-- <li class="menu-item-has-children">
+              <a href="JavaScript:void(0)"
+                >pages<i class="fa-solid fa-angle-right"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="service-details.html">Service details</a></li>
+                <li><a href="team-details.html">team details</a></li>
+                <li><a href="pricing-plans.html">pricing plans</a></li>
+              </ul>
+            </li> -->
+            <li class="menu-item-has-children">
+              <a href="our-projects.html"
+                >Product List<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="testimonials.html"
+                >Testimonials<i class="fa-solid fa-angle-right"></i
+              ></a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li class="menu-item-has-children">
+              <a href="JavaScript:void(0)"
+                >news<i class="fa-solid fa-angle-right"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="our-blog.html">our blog</a></li>
+                <li><a href="blog-details.html">blog details</a></li>
+              </ul>
+            </li> -->
+
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+
+         <div class="menu-sidebar-single-widget">
+    <h5 class="menu-sidebar-title">Contact Info</h5>
+
+    <div class="header-contact-info">
+
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            New Delhi, India
+        </span>
+
+        <span>
+            <a href="mailto:sales@trivisionsurvey.com">
+                <i class="fa-solid fa-envelope"></i>
+                sales@trivisionsurvey.com
+            </a>
+        </span>
+
+        <span>
+            <a href="tel:+911143004722">
+                <i class="fa-solid fa-phone"></i>
+                +91 11 4300 4722
+            </a>
+        </span>
+
+        <span>
+            <a href="https://whatsapp.com/channel/0029Vb6LhbhBfxo3Xh4me21w" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp Channel
+            </a>
+        </span>
+
+    </div>
+
+    <div class="social-profile">
+
+        <a href="https://www.facebook.com/share/18oxMQtLZr/?mibextid=wwXIfr" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://x.com/TRIVISIONTECH?t=d0SKB-HCzF6S9ptEuHNg4g&s=09" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="https://www.instagram.com/trivision.tech?igsh=MXd6M2dneGxjeDE1cg==" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://youtube.com/@trivisiontech?si=JElbJfe1hKB8qhzV" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+    </div>
+</div>
+
+
+          <a href="JavaScript:void(0)" id="res-cross"
+            ><i class="fa-regular fa-circle-xmark"></i
+          ></a>
+        </div>
+      </div>
+       <div class="hamenu valign">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 valign">
+                    <div class="cont-info two">
+                        <div class="about-sasnio bottom">
+                            <img src="assets/img2/about/ap40laser-gnss-receiver-1.png" alt="about-immg" class="img-fluid" style="height: 250px;; width: auto;">
+                            <!-- <img src="assets/img/about-immg.jpg" alt="about-immg"> -->
+                            <h4>About APEKS</h4>
+                            <p>APEKS (Shanghai Apekstool) is a leading provider of advanced geospatial surveying and mapping solutions. With customers in 60+ countries and over 41,500 active users, we deliver reliable GNSS/GPS systems, total stations, levels, and complete Ready-To-Survey packages.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 valign">
+    <div class="cont-info">
+        <div class="cont-info">
+        <div class="item mb-50">
+            <h6 class="text-u fw-600 mb-20">Location</h6>
+            <p class="fw-400 fz-18">
+                Unit No. 821, 8th Floor,<br>
+                Jaina Tower-1, District Centre,<br>
+                Janakpuri, New Delhi - 110058<br>
+                India
+            </p>
+        </div>
+
+        <div class="item mb-50">
+            <h6 class="text-u fw-600 mb-20">How to Connect</h6>
+            <p class="fw-400 fz-18">
+                <i class="fa-solid fa-phone me-2"></i>
+                <a href="tel:+911143004722">+91 11 4300 4722</a>
+            </p>
+            <p class="fw-400 fz-18">
+                <i class="fa-solid fa-envelope me-2"></i>
+                <a href="mailto:sales@trivisionsurvey.com">sales@trivisionsurvey.com</a>
+            </p>
+            <p class="fw-400 fz-18 mt-10">
+                <i class="fa-brands fa-whatsapp text-success me-2"></i>
+                <a href="https://whatsapp.com/channel/0029Vb6LhbhBfxo3Xh4me21w" target="_blank" class="text-success">
+                    Join WhatsApp Channel
+                </a>
+            </p>
+        </div>
+
+        <div class="bottom">
+            <h6 class="text-u fw-600 mb-20">Follow Us</h6>
+            <ul class="rest social-text d-flex fz-13">
+                <li><a href="https://www.instagram.com/trivision.tech" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/share/18oxMQtLZr/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://x.com/TRIVISIONTECH" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://youtube.com/@trivisiontech" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://whatsapp.com/channel/0029Vb6LhbhBfxo3Xh4me21w" target="_blank"><i class="fa-brands fa-whatsapp text-success"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</header>
+
+<!-- Banner -->
+<section class="bannr" style="background-image: url(assets/img/hero-three.jpg);">
+  <div class="container">
+    <div class="row align-items-end">
+      <div class="col-lg-6">
+        <div class="bannr-text">
+          <h2>Happy Customers</h2>
+          <p>See what professionals across India are saying about Trivision Tech and APEKS surveying solutions.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bannr-img">
+          <img src="assets/img/bannr.png" alt="Happy Customers">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="gap testimonial-section">
+  <div class="container">
+    <div class="heading">
+      <h6>CUSTOMER SUCCESS</h6>
+      <h2>Why Customers Trust Trivision Tech</h2>
+    </div>
+
+    <div class="feature-grid mt-50">
+      <div class="feature-box">
+        <i class="fa-solid fa-check-circle"></i>
+        <h4>Premium Quality</h4>
+        <p>APEKS products deliver superior accuracy and durability for professional surveying.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa-solid fa-headset"></i>
+        <h4>Expert Support</h4>
+        <p>Dedicated technical team providing training, maintenance, and 24/7 assistance.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa-solid fa-rocket"></i>
+        <h4>Fast Delivery</h4>
+        <p>Quick inventory access and nationwide logistics across India.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa-solid fa-certificate"></i>
+        <h4>Certified Products</h4>
+        <p>All APEKS products certified to international ISO and CE standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="gap">
+  <div class="container">
+    <div class="heading">
+      <h6>CLIENT REVIEWS</h6>
+      <h2>What Our Clients Say</h2>
+    </div>
+
+    <div class="row mt-50">
+      <!-- Testimonial 1 -->
+      <div class="col-lg-6">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"The APEKS GNSS receiver we purchased through Trivision Tech transformed our survey operations. The accuracy is outstanding, battery life is impressive, and the support team resolved all our questions within 24 hours. Highly recommended!"</p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">AP</div>
+            <div class="testimonial-info">
+              <h5>Abhishek Patel</h5>
+              <span>Survey Engineer, GeoBuild Constructions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-lg-6">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Working with Trivision Tech has been a game-changer for our infrastructure projects. Their AP-40 GNSS system delivers precision that exceeds industry standards. The after-sales service and training sessions were invaluable."</p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">AV</div>
+            <div class="testimonial-info">
+              <h5>Anita Verma</h5>
+              <span>Project Manager, Skyline Infrastructure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-lg-6">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"The CS3i data controller paired with APEKS total station has made our daily work much more efficient. Trivision Tech's technical team provided excellent training. We've already recommended them to three other survey firms."</p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">RS</div>
+            <div class="testimonial-info">
+              <h5>Rahul Sharma</h5>
+              <span>Land Survey Specialist, AgriMap India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="col-lg-6">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"As a government surveying department, we needed reliable equipment for large-scale mapping projects. The APEKS CORS solution from Trivision Tech proved to be exactly what we needed. Cost-effective and highly accurate."</p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">MK</div>
+            <div class="testimonial-info">
+              <h5>Anshu duhan</h5>
+              <span>Director, State Survey Department</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="col-lg-6">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"The TS8i Pro GNSS Tablet is rugged, reliable, and perfect for field work in challenging terrain. Trivision Tech's entire team is responsive and professional. This is the kind of partnership we want for the long term."</p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">VJ</div>
+            <div class="testimonial-info">
+              <h5>Vikram Joshi</h5>
+              <span>Operations Manager, Terrain Survey Solutions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div class="col-lg-6">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"We switched to APEKS products through Trivision Tech and haven't looked back. The accuracy improvements directly increased our productivity. Their local support network means we get help when we need it, not days later."</p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">PN</div>
+            <div class="testimonial-info">
+              <h5>Priya Nair</h5>
+              <span>Field Operations Lead, MetroScan Mapping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 7 -->
+      <div class="col-lg-6">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Outstanding products, outstanding service. The AP-50 precision receiver gives us sub-centimeter accuracy consistently. Trivision Tech's competitive pricing and transparent communication make them stand out from competitors."</p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">AK</div>
+            <div class="testimonial-info">
+              <h5>Amit Kumar</h5>
+              <span>Senior Surveyor, National Roads Authority</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 8 -->
+      <div class="col-lg-6">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"In agriculture mapping, precision is everything. The APEKS laser level from Trivision Tech helped us optimize our irrigation projects with amazing accuracy. The team even provided custom training for our entire staff."</p>
+          <div class="testimonial-meta">
+            <div class="testimonial-avatar">SD</div>
+            <div class="testimonial-info">
+              <h5>Suresh Desai</h5>
+              <span>Head, Precision Agriculture Dept, AgriTech Corp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="gap" style="background-color: #0066cc; color: white;">
+  <div class="container">
+    <div class="text-center">
+      <h2 style="color: white; margin-bottom: 20px;">Ready to Join Our Happy Customers?</h2>
+      <p style="font-size: 16px; margin-bottom: 30px;">Discover why professionals across India choose Trivision Tech for their surveying needs.</p>
+      <div>
+        <a href="contact.html" class="btn" style="background: white; color: #0066cc;">Contact Us Today</a>
+        <a href="our-projects.html" class="btn two" style="border-color: white; color: white;">View Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="gap no-bottom two" style="background-image: url(assets/img/footer-2.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/img2/logo_trivision_tech-removebg-preview.png" 
+                 alt="logo"
+                 class="img-fluid d-none d-md-block"
+                 style="height: 130px; width: auto;">
+            <img src="assets/img2/logo_trivision_tech-removebg-preview.png" 
+                 alt="logo"
+                 class="img-fluid d-block d-md-none"
+                 style="height: 130px; width: auto;">
+          </a>
+          <p>Leading supplier of high-precision surveying instruments – GNSS Receivers, Total Stations, Auto Levels, CORS, LIDAR & Monitoring Systems across India.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <div class="boder"></div>
+          <ul>
+            <li><i class="fa-solid fa-angle-right"></i><a href="index.html">Home</a></li>
+            <li><i class="fa-solid fa-angle-right"></i><a href="our-projects.html">Product List</a></li>
+            <li><i class="fa-solid fa-angle-right"></i><a href="about.html">About Us</a></li>
+            <li><i class="fa-solid fa-angle-right"></i><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-links">
+          <h3>Stay Updated</h3>
+          <div class="boder"></div>
+          <p>Join our WhatsApp channel for latest offers & product updates.</p>
+          <a href="https://whatsapp.com/channel/0029Vb6LhbhBfxo3Xh4me21w" target="_blank" class="btn" style="margin-top:15px;">Join WhatsApp Channel</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyrights">
+      <p>Copyright © Trivision Tech 2025. All Rights Reserved.</p>
+      <ul class="social-icon">
+        <li><a href="https://www.instagram.com/trivision.tech" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/share/18oxMQtLZr/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="https://x.com/TRIVISIONTECH" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://youtube.com/@trivisiontech" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- Progress Button -->
+<div id="progress">
+  <span id="progress-value"><i class="fa-solid fa-up-long"></i></span>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.fancybox.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
